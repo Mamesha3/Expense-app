@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+     <!-- for icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <div class="all">
+    <header>
+        <button id="humberger"><i class="fa-solid fa-bars"></i></button>
+    </header>
+    <div class="contains_all_expense_app">
+
+    <h1 class="main_title">Expense Tracker</h1>
+
+    <!-- insert amount dispaley container -->
+     <div class="display1">
+        <h2 class="bold">Available Balance</h2>
+        <h2 class="insert_amount">$ <span id="amount_of_added">0</span></h2>
+     </div>
+     
+     <!-- income and expense display container -->
+      <div class="amount_diplay">
+        <div class="income">
+            <h2 class="bold">INCOME</h2>
+            <h2 class="income_amount">$ <span id="income">0</span></h2>
+        </div>
+        <hr class="breaker">
+        <div class="expense">
+            <h2 class="bold">EXPENSE</h2>
+            <h2 class="expense_amount">$ <span id="expense">0</span></h2>
+        </div>
+      </div>
+
+      <!-- history display container for all added tasks -->
+       <div class="history">
+          <h2 class="bold">History</h2>
+          <hr>
+              <!-- here we will added our expense and income -->
+          <div class="added_task" id="tasks">
+            
+             <!-- <div class="task">
+                <div class="text_icon">
+                   <i class="fa-solid fa-x"></i>
+                   <p id="task_text">Book</p>
+                </div>
+                <h3 id="added_amount">30</h3>
+             </div> -->
+             
+          </div>
+
+       </div>
+
+       <!-- inputs to added a task and to insert incomes -->
+        <div class="inputs_options">
+            <h2 class="bold">Add New Transition</h2>
+            <hr>
+            <div class="task_modules">
+               <h3>Task</h3>
+               <input type="text" id="task_name" placeholder="Enter task">
+
+               <div class="selct">
+                  <h3>Select type: </h3>
+                  <select  id="type_select">
+                      <option value="expense">Expense</option>
+                      <option value="income">Income</option>
+                  </select>
+               </div>
+               
+               <input type="text" id="amount_text" placeholder="Enter Amount">
+            </div>
+
+            <button id="task_added">Add Transition</button>
+        </div>
+
+    </div>
+        <!-- display profile container here -->
+         <!-- action="https://formspree.io/f/xzzklkez" method="POST" -->
+        <form class="profile_display">
+            <div class="cancel"><i class="fa-solid fa-x"></i></div>
+            <button id="save">Save</button>
+            <div class="image">
+                <img src="mame[1].jpg" alt="profile image" >
+            </div>
+            <div class="insert_img"><label for="insert_imgs">Upload Image</label><input type="file" id="insert_imgs" name="image" accept="image/jpg, image/png"></div>
+            <div class="profile_name">Mohammed Ahmed</div>
+
+            <div class="information">
+                <h2 class="name">Name: <span id="name_text">Mohammed</span></h2>
+                <h2 class="Email">Email: <span id="email_text">mame65@gmail.com</span></h2>
+                <h2 class="phoneNumber">Phone Number: <span id="phone_text">0912537619</span></h2>
+            </div>
+        
+            <button id="log_out">LogOut</button>
+        </form>
+    
+    </div>
+
+
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
