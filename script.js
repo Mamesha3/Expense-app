@@ -11,6 +11,14 @@ let incomeNum = 0
 renderSaveData()
 
 
+  // to get code click here
+document.querySelector('.code_sign').addEventListener('click',function () {
+      let code = document.querySelector('.code_here')
+      code.classList.toggle('showhere')
+      document.querySelector('.code_sign').innerHTML = '➡️'
+})
+
+
 // for drag and drop functionalty
 document.addEventListener('dragstart', e => {
     if (e.target.matches('.task')) {
