@@ -307,12 +307,12 @@ label[for="insert_imgs"] {
 
 .code_here {
     position: absolute;
-    right: 0;
+    right: -150px;
     top: 100px;
     transform: translateX(140px);
 }
 .showhere {
-    transform: translateX(0);
+    right: 0;
 }
 .code_here a {
     color: white;
