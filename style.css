@@ -309,7 +309,6 @@ label[for="insert_imgs"] {
     position: absolute;
     right: -150px;
     top: 100px;
-    transform: translateX(140px);
 }
 .showhere {
     right: 0;
