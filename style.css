@@ -305,26 +305,6 @@ label[for="insert_imgs"] {
     transform: scale(0.97);
 }
 
-.code_here {
-    position: absolute;
-    right: -150px;
-    top: 100px;
-}
-.showhere {
-    right: 0;
-}
-.code_here a {
-    color: white;
-    background-color: black;
-    padding: 5px 10px;
-    width: 250px;
-    border-radius: 5px;
-    text-align: center;
-}
-.code_sign {
-    cursor: pointer;
-}
-
 @media (min-width: 600px) {
     .contains_all_expense_app {
         max-width: 400px;
